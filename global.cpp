@@ -1,2 +1,5 @@
-extern int numberRecipes;
-int numberRecipes = 0;
+#include <QStringList>
+//extern int numberRecipes;
+//int numberRecipes = 0;
+//
+

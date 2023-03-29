@@ -2,7 +2,8 @@
 #define NEWRECIPEWINDOW_H
 
 #include <QDialog>
-
+#include <QLineEdit>
+#include <QSlider>
 namespace Ui {
 class newRecipeWindow;
 }
@@ -22,8 +23,21 @@ private slots:
 
     void on_addMethod_clicked();
 
+    void on_calorieSlider_actionTriggered(int action);
+
+    void on_veganBox_clicked();
+
+    void on_veggieBox_clicked();
+
+    void on_pescaBox_clicked();
+
+    void on_addCalorie_clicked();
+
 private:
     Ui::newRecipeWindow *ui;
+    QSlider *calorieSlider ;
+    QLineEdit *calorieLine ;
+    QStringList method ;
 };
 
 #endif // NEWRECIPEWINDOW_H

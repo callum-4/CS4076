@@ -6,27 +6,20 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include "newRecipeWindow.h"
+#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-
-
-
-
-
-
-
-
 
 
 
