@@ -16,18 +16,15 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_actionNew_Project_triggered();
 
-    void on_actionSave_Project_triggered();
-
-    void on_actionOpen_Project_triggered();
-
-
-    void on_actionExit_triggered();
 
     void on_actionAbout_2_triggered();
 
     void on_actionAbout_triggered();
+
+    void on_actionExit_triggered();
+
+    void on_actionNew_Recipe_triggered();
 
 private:
     Ui::MainWindow *ui;

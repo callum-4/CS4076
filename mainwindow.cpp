@@ -5,7 +5,7 @@
 #include <QFile>
 #include <QFileDialog>
 #include <QTextStream>
-
+#include "newRecipeWindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -20,38 +20,12 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_actionNew_Project_triggered()
-{
-    qApp->quit();
-    QProcess::startDetached(qApp->arguments()[0], qApp->arguments());
-}
 
 
-void MainWindow::on_actionSave_Project_triggered()
-{
-    /*QString filename= QFileDialog::getSaveFileName(this, "Save As");
-
-      if (filename.isEmpty())
-          return;
-
-      QFile file(filename);
-
-    */
-}
 
 
-void MainWindow::on_actionOpen_Project_triggered()
-{
-    /* if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
-           return;
 
-       QTextStream out(&file);
 
-       out << ui->textEdit->toPlainText() << "\n";
-
-       file.close();
-    */
-}
 
 
 
@@ -72,8 +46,14 @@ void MainWindow::on_actionAbout_2_triggered()
 void MainWindow::on_actionAbout_triggered()
 {
     QMessageBox::about(this, "Help", "To use Ingredient class: 1. Assign a type(e.g vegetable carrot) 2. QString carrotInfo = carrot.getInfo();"
-                                     "To use Measurement class: 1. Measurement<float/double> item(value, measurement); ((e.g sugar(100.0, 'cups')))"
-                                     "                          2. float sugarValue = sugar.getValue(); "
-                                     "                             QString sugarUnit = sugar.getUnit();  ");
+                                     "To use Measurement class: 1. Measurement<float/double> item(value, measurement); ((e.g sugar(100.0, cu))) ");
+}
+
+
+void MainWindow::on_actionNew_Recipe_triggered()
+{
+    newRecipeWindow newrecipe;
+    newrecipe.setModal(true);
+    newrecipe.exec();
 }
 
