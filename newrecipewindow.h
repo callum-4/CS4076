@@ -17,27 +17,22 @@ public:
     ~newRecipeWindow();
 
 private slots:
-    void on_addIngredient_clicked();
-
-    void on_listWidget_currentTextChanged(const QString &currentText);
-
+    // // the buttons slots in new recipe window ui
     void on_addMethod_clicked();
 
     void on_calorieSlider_actionTriggered(int action);
 
-    void on_veganBox_clicked();
-
-    void on_veggieBox_clicked();
-
-    void on_pescaBox_clicked();
-
-    void on_addCalorie_clicked();
+    void on_saveRecipe_clicked();
 
 private:
     Ui::newRecipeWindow *ui;
     QSlider *calorieSlider ;
     QLineEdit *calorieLine ;
+    //stringlist made here
+
     QStringList method ;
+
+
 };
 
 #endif // NEWRECIPEWINDOW_H

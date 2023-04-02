@@ -20,9 +20,11 @@ set(PROJECT_SOURCES
         newrecipewindow.h
         newrecipewindow.cpp
         newrecipewindow.ui
-        global.cpp
+
         recipe.cpp
         recipe.h
+
+
 
 
 )

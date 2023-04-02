@@ -19,53 +19,50 @@
      <x>0</x>
      <y>70</y>
      <width>391</width>
-     <height>241</height>
+     <height>341</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="7" column="0">
-     <widget class="QListWidget" name="ingredientList"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLineEdit" name="enterIngredient">
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="recipeName">
       <property name="text">
        <string/>
       </property>
      </widget>
     </item>
-    <item row="3" column="0">
-     <widget class="QPushButton" name="addIngredient">
-      <property name="text">
-       <string>Add</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Enter ingredients:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="enterMethod"/>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>Enter Method:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
+    <item row="9" column="0">
      <widget class="QPushButton" name="addMethod">
       <property name="text">
        <string>Add</string>
       </property>
      </widget>
     </item>
-    <item row="7" column="1">
+    <item row="6" column="0">
      <widget class="QListWidget" name="methodList"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLineEdit" name="enterMethod"/>
+    </item>
+    <item row="10" column="0">
+     <widget class="QPushButton" name="saveRecipe">
+      <property name="text">
+       <string>Save Recipe</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Enter Method:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Recipe Name:</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -75,7 +72,7 @@
      <x>390</x>
      <y>70</y>
      <width>151</width>
-     <height>241</height>
+     <height>343</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -118,9 +115,30 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="addCalorie">
+     <widget class="QLabel" name="label">
       <property name="text">
-       <string>Add</string>
+       <string>Difficulty:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="easyButton">
+      <property name="text">
+       <string>Easy</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="mediumButton">
+      <property name="text">
+       <string>Medium</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="hardButton">
+      <property name="text">
+       <string>Hard</string>
       </property>
      </widget>
     </item>
